@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--My Team TabbarVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MyTeamTabbarVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MyTeamTabbarVC" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chq-LO-vKq" customClass="ToolBar" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FGh-G6-nQt"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="qU5-dp-f2L">
+                                <rect key="frame" x="0.0" y="60" width="414" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oBi-Co-Hsf">
+                                        <rect key="frame" x="0.0" y="0.0" width="135.33333333333334" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUl-SK-Kiz">
+                                                <rect key="frame" x="0.0" y="0.0" width="135.33333333333334" height="49"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="14"/>
+                                                <state key="normal" title="All">
+                                                    <color key="titleColor" name="AppThemeColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnTabBarPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="c2e-AA-4vp"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNL-Dl-Uuf">
+                                                <rect key="frame" x="0.0" y="49" width="135.33333333333334" height="1"/>
+                                                <color key="backgroundColor" name="AppThemeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="G8Y-8f-f1i"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uz1-Qo-sAC">
+                                        <rect key="frame" x="139.33333333333331" y="0.0" width="135.33333333333331" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSw-dV-ndZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="135.33333333333334" height="50"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                <state key="normal" title="Seller">
+                                                    <color key="titleColor" name="AppPlaceHolderColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnTabBarPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fUG-UZ-UTv"/>
+                                                </connections>
+                                            </button>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YG-3s-rsK">
+                                                <rect key="frame" x="0.0" y="0.0" width="135.33333333333334" height="1"/>
+                                                <color key="backgroundColor" name="AppThemeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="WOx-ke-Yvh"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8Rn-9e-oOc">
+                                        <rect key="frame" x="278.66666666666669" y="0.0" width="135.33333333333331" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFJ-eE-mgy">
+                                                <rect key="frame" x="0.0" y="0.0" width="135.33333333333334" height="50"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="14"/>
+                                                <state key="normal" title="Deliveryboy">
+                                                    <color key="titleColor" name="AppPlaceHolderColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnTabBarPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vBf-h9-7Z5"/>
+                                                </connections>
+                                            </button>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pze-i3-4Hn">
+                                                <rect key="frame" x="0.0" y="0.0" width="135.33333333333334" height="1"/>
+                                                <color key="backgroundColor" name="AppThemeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="rKs-xm-Js0"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fy0-PB-ViL"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5G-kT-i0a">
+                                <rect key="frame" x="0.0" y="118" width="414" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s5G-kT-i0a" firstAttribute="top" secondItem="qU5-dp-f2L" secondAttribute="bottom" constant="8" id="UW3-e9-wqa"/>
+                            <constraint firstItem="qU5-dp-f2L" firstAttribute="top" secondItem="chq-LO-vKq" secondAttribute="bottom" id="aC1-sv-DuY"/>
+                            <constraint firstItem="s5G-kT-i0a" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fIu-3h-nkX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qU5-dp-f2L" secondAttribute="trailing" id="hLZ-f1-HSF"/>
+                            <constraint firstItem="chq-LO-vKq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="kxq-ZT-Ukg"/>
+                            <constraint firstItem="qU5-dp-f2L" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="lyz-mG-eQD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="s5G-kT-i0a" secondAttribute="bottom" id="tSj-HK-YU4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="s5G-kT-i0a" secondAttribute="trailing" id="uIN-GV-7mq"/>
+                            <constraint firstAttribute="trailing" secondItem="chq-LO-vKq" secondAttribute="trailing" id="xzB-fj-h2H"/>
+                            <constraint firstItem="chq-LO-vKq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="zvk-gO-DKj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="uiViewTabContainer" destination="s5G-kT-i0a" id="7Jf-cS-Pun"/>
+                        <outlet property="uiViewToolBar" destination="chq-LO-vKq" id="rjc-rL-6SL"/>
+                        <outletCollection property="btnTabBar" destination="pUl-SK-Kiz" collectionClass="NSMutableArray" id="LzX-hu-7j6"/>
+                        <outletCollection property="btnTabBar" destination="zSw-dV-ndZ" collectionClass="NSMutableArray" id="adx-kg-xOg"/>
+                        <outletCollection property="btnTabBar" destination="gFJ-eE-mgy" collectionClass="NSMutableArray" id="xNg-cs-awm"/>
+                        <outletCollection property="uiViewUnderLine" destination="iNL-Dl-Uuf" collectionClass="NSMutableArray" id="Wns-Gx-bP9"/>
+                        <outletCollection property="uiViewUnderLine" destination="2YG-3s-rsK" collectionClass="NSMutableArray" id="2fG-Dq-nAa"/>
+                        <outletCollection property="uiViewUnderLine" destination="pze-i3-4Hn" collectionClass="NSMutableArray" id="QvD-gD-okt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109" y="89"/>
+        </scene>
+        <!--Seller ListVC-->
+        <scene sceneID="0Ib-mY-hmn">
+            <objects>
+                <viewController storyboardIdentifier="SellerListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aaG-o9-Dmf" customClass="SellerListVC" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uxe-Z5-8Co">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hHZ-gM-zgK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="aaG-o9-Dmf" id="9z3-Eb-4V3"/>
+                                    <outlet property="delegate" destination="aaG-o9-Dmf" id="m6b-ey-VGF"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffj-AI-BEY">
+                                <rect key="frame" x="351" y="664" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ffj-AI-BEY" secondAttribute="height" multiplier="1:1" id="Azv-ea-oh5"/>
+                                    <constraint firstAttribute="width" constant="47" id="Tap-EA-3lr"/>
+                                </constraints>
+                                <color key="tintColor" name="AppThemeColor"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="plus.circle.fill" catalog="system" symbolScale="medium"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" weight="thin">
+                                        <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="btnAddMember:" destination="aaG-o9-Dmf" eventType="touchUpInside" id="B9S-dg-qpi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PPO-Jj-mWq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hHZ-gM-zgK" firstAttribute="top" secondItem="Uxe-Z5-8Co" secondAttribute="top" id="9eZ-Tb-1jh"/>
+                            <constraint firstItem="hHZ-gM-zgK" firstAttribute="leading" secondItem="Uxe-Z5-8Co" secondAttribute="leading" id="BcX-bH-ku5"/>
+                            <constraint firstItem="PPO-Jj-mWq" firstAttribute="bottom" secondItem="ffj-AI-BEY" secondAttribute="bottom" constant="25" id="P1Y-tx-QcM"/>
+                            <constraint firstItem="PPO-Jj-mWq" firstAttribute="trailing" secondItem="ffj-AI-BEY" secondAttribute="trailing" constant="16" id="grh-G2-T0B"/>
+                            <constraint firstItem="PPO-Jj-mWq" firstAttribute="bottom" secondItem="hHZ-gM-zgK" secondAttribute="bottom" id="ogc-5s-NFG"/>
+                            <constraint firstItem="PPO-Jj-mWq" firstAttribute="trailing" secondItem="hHZ-gM-zgK" secondAttribute="trailing" id="xRq-Kf-Zpt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewUser" destination="hHZ-gM-zgK" id="hqw-PS-xMf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tr-bq-KQQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109" y="782"/>
+        </scene>
+        <!--All TeamVC-->
+        <scene sceneID="Y5P-Do-Zrz">
+            <objects>
+                <viewController storyboardIdentifier="AllTeamVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JjY-Sn-y9n" customClass="AllTeamVC" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gmk-mD-H61">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yms-Rx-heg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="JjY-Sn-y9n" id="jEy-fr-eA9"/>
+                                    <outlet property="delegate" destination="JjY-Sn-y9n" id="oW9-uU-UcI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PtH-AO-dTN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PtH-AO-dTN" firstAttribute="trailing" secondItem="Yms-Rx-heg" secondAttribute="trailing" id="0gU-sj-VKh"/>
+                            <constraint firstItem="Yms-Rx-heg" firstAttribute="top" secondItem="PtH-AO-dTN" secondAttribute="top" id="3Wq-Z2-fJd"/>
+                            <constraint firstItem="Yms-Rx-heg" firstAttribute="leading" secondItem="PtH-AO-dTN" secondAttribute="leading" id="gG5-NJ-Gha"/>
+                            <constraint firstItem="PtH-AO-dTN" firstAttribute="bottom" secondItem="Yms-Rx-heg" secondAttribute="bottom" id="zDc-RR-Mul"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewUser" destination="Yms-Rx-heg" id="PCp-cx-Igr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYk-GC-YW0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-571" y="782"/>
+        </scene>
+        <!--Add TeamVC-->
+        <scene sceneID="3hF-xY-6dR">
+            <objects>
+                <viewController storyboardIdentifier="AddTeamVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sxr-Ep-wdF" customClass="AddTeamVC" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eL7-dv-j5M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdj-fq-0hi" customClass="ToolBar" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="qSB-aZ-CW5"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jnf-jp-XO9">
+                                <rect key="frame" x="0.0" y="68" width="414" height="605"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lb-wt-oYT">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="616"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ec4-Ck-QL7">
+                                                <rect key="frame" x="16" y="0.0" width="382" height="616"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FrR-uF-jlL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="136"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBW-fh-jYz">
+                                                                <rect key="frame" x="127" y="8" width="128" height="128"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profile_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="SMW-A4-adt">
+                                                                        <rect key="frame" x="11.666666666666657" y="6" width="105" height="105"/>
+                                                                    </imageView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qBm-7w-N0D">
+                                                                        <rect key="frame" x="11.666666666666657" y="6" width="105" height="105"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="qBm-7w-N0D" secondAttribute="height" multiplier="1:1" id="bFd-QI-oJX"/>
+                                                                            <constraint firstAttribute="height" constant="105" id="fYn-Hv-ubl"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gj2-TL-54X">
+                                                                        <rect key="frame" x="11.666666666666657" y="6" width="105" height="105"/>
+                                                                        <connections>
+                                                                            <action selector="btnFullScreenImagePressed:" destination="Sxr-Ep-wdF" eventType="touchUpInside" id="OhU-qb-9BV"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJB-2E-Qvs">
+                                                                        <rect key="frame" x="88" y="88" width="40" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="40" id="38M-vT-Itb"/>
+                                                                            <constraint firstAttribute="height" constant="40" id="fUY-ON-v3Q"/>
+                                                                        </constraints>
+                                                                        <state key="normal" image="ic_edit_pencil"/>
+                                                                        <connections>
+                                                                            <action selector="btnUploadProfile:" destination="Sxr-Ep-wdF" eventType="touchUpInside" id="hhO-Gj-EhP"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="TBW-fh-jYz" secondAttribute="height" multiplier="1:1" id="1jn-NZ-0cD"/>
+                                                                    <constraint firstAttribute="height" constant="128" id="6DU-nD-R3s"/>
+                                                                    <constraint firstItem="Gj2-TL-54X" firstAttribute="leading" secondItem="qBm-7w-N0D" secondAttribute="leading" id="88A-r1-3P0"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="bJB-2E-Qvs" secondAttribute="trailing" id="A0r-nB-1wO"/>
+                                                                    <constraint firstItem="SMW-A4-adt" firstAttribute="leading" secondItem="qBm-7w-N0D" secondAttribute="leading" id="DWE-eV-fMQ"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="bJB-2E-Qvs" secondAttribute="bottom" id="ISi-4P-UIX"/>
+                                                                    <constraint firstItem="Gj2-TL-54X" firstAttribute="top" secondItem="qBm-7w-N0D" secondAttribute="top" id="R2v-Ui-g9S"/>
+                                                                    <constraint firstItem="Gj2-TL-54X" firstAttribute="trailing" secondItem="qBm-7w-N0D" secondAttribute="trailing" id="Va4-Hl-UUx"/>
+                                                                    <constraint firstItem="SMW-A4-adt" firstAttribute="top" secondItem="qBm-7w-N0D" secondAttribute="top" id="ao6-Ls-Pk8"/>
+                                                                    <constraint firstItem="SMW-A4-adt" firstAttribute="trailing" secondItem="qBm-7w-N0D" secondAttribute="trailing" id="h1e-Lb-Cnu"/>
+                                                                    <constraint firstItem="qBm-7w-N0D" firstAttribute="centerX" secondItem="TBW-fh-jYz" secondAttribute="centerX" id="koX-AI-WYH"/>
+                                                                    <constraint firstItem="SMW-A4-adt" firstAttribute="bottom" secondItem="qBm-7w-N0D" secondAttribute="bottom" id="pRk-oz-FXs"/>
+                                                                    <constraint firstItem="Gj2-TL-54X" firstAttribute="bottom" secondItem="qBm-7w-N0D" secondAttribute="bottom" id="pSC-gs-NJY"/>
+                                                                    <constraint firstItem="qBm-7w-N0D" firstAttribute="top" secondItem="TBW-fh-jYz" secondAttribute="top" constant="6" id="sTW-kg-Ipc"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="TBW-fh-jYz" firstAttribute="centerX" secondItem="FrR-uF-jlL" secondAttribute="centerX" id="101-IK-vHp"/>
+                                                            <constraint firstAttribute="bottom" secondItem="TBW-fh-jYz" secondAttribute="bottom" id="9Xi-lT-45c"/>
+                                                            <constraint firstItem="TBW-fh-jYz" firstAttribute="top" secondItem="FrR-uF-jlL" secondAttribute="top" constant="8" id="U9R-gC-2xG"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="25o-cC-ECE">
+                                                        <rect key="frame" x="0.0" y="144" width="382" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGl-My-fK3">
+                                                                <rect key="frame" x="0.0" y="0.0" width="191" height="40"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="Sales Person" image="ic_radio_blue">
+                                                                    <color key="titleColor" name="AppFontColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="btnUserTypePressed:" destination="Sxr-Ep-wdF" eventType="touchUpInside" id="wAv-WM-XJt"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXW-5Y-1nW">
+                                                                <rect key="frame" x="191" y="0.0" width="191" height="40"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                <state key="normal" title="Deliveryboy" image="ic_radio_grey">
+                                                                    <color key="titleColor" name="AppFontColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="btnUserTypePressed:" destination="Sxr-Ep-wdF" eventType="touchUpInside" id="Okn-NB-OOC"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="1LU-TA-9ag"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ic-eD-RNm" customClass="SkyFloatingLabelTextField" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="192" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="IOD-TI-fx7"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" name="AppPlaceHolderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" name="AppFocusedTextFieldColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Full Name"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ygf-XP-LGE" customClass="SkyFloatingLabelTextField" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="240" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="5VD-pu-b85"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="email"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" name="AppPlaceHolderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" name="AppFocusedTextFieldColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email Address"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xgH-6m-Pkv" customClass="SkyFloatingLabelTextField" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="288" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="eGd-ac-ziw"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" name="AppPlaceHolderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" name="AppFocusedTextFieldColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Mobile Number"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIc-yW-bWa">
+                                                        <rect key="frame" x="0.0" y="336" width="382" height="40"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yPc-Dx-wYf" customClass="SkyFloatingLabelTextField" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="RvK-Pi-pOp"/>
+                                                                </constraints>
+                                                                <color key="textColor" name="AppFontColor"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                        <color key="value" name="AppPlaceHolderColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                        <color key="value" name="AppFocusedTextFieldColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0E-wm-dkl">
+                                                                <rect key="frame" x="337" y="0.0" width="45" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="45" id="nbx-Hx-77G"/>
+                                                                </constraints>
+                                                                <state key="normal" image="ic_eye_grey"/>
+                                                                <connections>
+                                                                    <action selector="btnEyePressed:" destination="Sxr-Ep-wdF" eventType="touchUpInside" id="tSc-FY-zwE"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="yPc-Dx-wYf" secondAttribute="bottom" id="1qI-Vu-Eoj"/>
+                                                            <constraint firstItem="X0E-wm-dkl" firstAttribute="top" secondItem="TIc-yW-bWa" secondAttribute="top" id="5Ak-MW-XvD"/>
+                                                            <constraint firstAttribute="trailing" secondItem="yPc-Dx-wYf" secondAttribute="trailing" id="7RY-KB-bjF"/>
+                                                            <constraint firstItem="yPc-Dx-wYf" firstAttribute="leading" secondItem="TIc-yW-bWa" secondAttribute="leading" id="D7n-Nd-nks"/>
+                                                            <constraint firstItem="yPc-Dx-wYf" firstAttribute="top" secondItem="TIc-yW-bWa" secondAttribute="top" id="DQk-5R-9PW"/>
+                                                            <constraint firstAttribute="bottom" secondItem="X0E-wm-dkl" secondAttribute="bottom" id="IrL-rH-WSC"/>
+                                                            <constraint firstAttribute="trailing" secondItem="X0E-wm-dkl" secondAttribute="trailing" id="rv9-yp-OgS"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QXu-BJ-d9o">
+                                                        <rect key="frame" x="0.0" y="384" width="382" height="40"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nTi-xh-4C6" customClass="SkyFloatingLabelTextField" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="4X5-Id-USm"/>
+                                                                </constraints>
+                                                                <color key="textColor" name="AppFontColor"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                        <color key="value" name="AppPlaceHolderColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                        <color key="value" name="AppFocusedTextFieldColor"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Confirm Password"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4O-HE-76b">
+                                                                <rect key="frame" x="337" y="0.0" width="45" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="45" id="uEi-M5-mKy"/>
+                                                                </constraints>
+                                                                <state key="normal" image="ic_eye_grey"/>
+                                                                <connections>
+                                                                    <action selector="btnEyePressed:" destination="Sxr-Ep-wdF" eventType="touchUpInside" id="I6l-ot-heI"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="nTi-xh-4C6" secondAttribute="trailing" id="Cgg-VS-c3X"/>
+                                                            <constraint firstAttribute="bottom" secondItem="h4O-HE-76b" secondAttribute="bottom" id="Hak-ij-Faf"/>
+                                                            <constraint firstAttribute="bottom" secondItem="nTi-xh-4C6" secondAttribute="bottom" id="Mte-Dn-FZf"/>
+                                                            <constraint firstItem="h4O-HE-76b" firstAttribute="top" secondItem="QXu-BJ-d9o" secondAttribute="top" id="QaC-P6-fTV"/>
+                                                            <constraint firstItem="nTi-xh-4C6" firstAttribute="leading" secondItem="QXu-BJ-d9o" secondAttribute="leading" id="SaH-oF-GfF"/>
+                                                            <constraint firstAttribute="trailing" secondItem="h4O-HE-76b" secondAttribute="trailing" id="Zg5-yD-yKg"/>
+                                                            <constraint firstItem="nTi-xh-4C6" firstAttribute="top" secondItem="QXu-BJ-d9o" secondAttribute="top" id="stp-SS-el7"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SIB-Pa-p1D" customClass="SkyFloatingLabelTextField" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="432" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="TcI-Km-aqf"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="street-address"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" name="AppPlaceHolderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" name="AppFocusedTextFieldColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Flat/ Block number"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="93e-RQ-hgh" customClass="SkyFloatingLabelTextField" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="480" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="g4g-gr-pME"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="address-line1"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" name="AppPlaceHolderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" name="AppFocusedTextFieldColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Street/ Society Name"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mhv-3H-l06" customClass="SkyFloatingLabelTextField" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="528" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="jiJ-gg-Tmn"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" name="AppPlaceHolderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" name="AppFocusedTextFieldColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Landmark"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cdI-hX-Roc" customClass="SkyFloatingLabelTextField" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="576" width="382" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="EVh-TJ-85z"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="postal-code"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" name="AppPlaceHolderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" name="AppFocusedTextFieldColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Pincode"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Ec4-Ck-QL7" secondAttribute="bottom" id="Ayi-Nf-HYO"/>
+                                            <constraint firstItem="Ec4-Ck-QL7" firstAttribute="top" secondItem="6lb-wt-oYT" secondAttribute="top" id="Ixk-l0-C5h"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ec4-Ck-QL7" secondAttribute="trailing" constant="16" id="kzI-0t-AUR"/>
+                                            <constraint firstItem="Ec4-Ck-QL7" firstAttribute="leading" secondItem="6lb-wt-oYT" secondAttribute="leading" constant="16" id="v8C-SR-Avu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="6lb-wt-oYT" secondAttribute="bottom" id="OVW-oN-dma"/>
+                                    <constraint firstItem="6lb-wt-oYT" firstAttribute="leading" secondItem="Jnf-jp-XO9" secondAttribute="leading" id="XtP-aj-9r2"/>
+                                    <constraint firstItem="6lb-wt-oYT" firstAttribute="width" secondItem="Jnf-jp-XO9" secondAttribute="width" id="lGt-LZ-4Ka"/>
+                                    <constraint firstAttribute="trailing" secondItem="6lb-wt-oYT" secondAttribute="trailing" id="pP0-XE-p1k"/>
+                                    <constraint firstItem="6lb-wt-oYT" firstAttribute="top" secondItem="Jnf-jp-XO9" secondAttribute="top" id="zPg-jP-0IN"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="WGK-JT-Xle"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="yTC-bN-caR"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Scm-Mp-FAy" customClass="HalfCornerButton" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="681" width="414" height="55"/>
+                                <color key="backgroundColor" name="AppThemeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="JUC-bb-tMl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="18"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAddTeamMemberPressed:" destination="Sxr-Ep-wdF" eventType="touchUpInside" id="atj-dp-nKN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kOc-R2-qwZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kOc-R2-qwZ" firstAttribute="trailing" secondItem="Jnf-jp-XO9" secondAttribute="trailing" id="5XJ-lf-p1D"/>
+                            <constraint firstItem="kOc-R2-qwZ" firstAttribute="trailing" secondItem="xdj-fq-0hi" secondAttribute="trailing" id="Dh3-iJ-uVA"/>
+                            <constraint firstItem="xdj-fq-0hi" firstAttribute="top" secondItem="kOc-R2-qwZ" secondAttribute="top" id="G81-r7-pJ8"/>
+                            <constraint firstItem="Jnf-jp-XO9" firstAttribute="leading" secondItem="kOc-R2-qwZ" secondAttribute="leading" id="J8x-41-cZM"/>
+                            <constraint firstItem="xdj-fq-0hi" firstAttribute="leading" secondItem="eL7-dv-j5M" secondAttribute="leading" id="Oev-Gd-gft"/>
+                            <constraint firstItem="Jnf-jp-XO9" firstAttribute="width" secondItem="eL7-dv-j5M" secondAttribute="width" id="Sl2-Be-F8e"/>
+                            <constraint firstItem="kOc-R2-qwZ" firstAttribute="bottom" secondItem="Scm-Mp-FAy" secondAttribute="bottom" id="cVA-wY-uz1"/>
+                            <constraint firstItem="Scm-Mp-FAy" firstAttribute="top" secondItem="Jnf-jp-XO9" secondAttribute="bottom" constant="8" id="drt-5V-Ldv"/>
+                            <constraint firstItem="Scm-Mp-FAy" firstAttribute="leading" secondItem="kOc-R2-qwZ" secondAttribute="leading" id="hct-sK-rgk"/>
+                            <constraint firstAttribute="trailing" secondItem="Scm-Mp-FAy" secondAttribute="trailing" id="moO-Iy-YUc"/>
+                            <constraint firstItem="Jnf-jp-XO9" firstAttribute="top" secondItem="xdj-fq-0hi" secondAttribute="bottom" constant="8" symbolic="YES" id="vEm-Tu-ubS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAddTeam" destination="Scm-Mp-FAy" id="3WW-BF-Fzu"/>
+                        <outlet property="btnEyePassword" destination="X0E-wm-dkl" id="MKK-UG-xIx"/>
+                        <outlet property="imageViewProfile" destination="qBm-7w-N0D" id="C5T-iT-azC"/>
+                        <outlet property="stackViewUserType" destination="25o-cC-ECE" id="6bA-E2-TGT"/>
+                        <outlet property="textfieldBlockNo" destination="SIB-Pa-p1D" id="XtN-KI-n5Q"/>
+                        <outlet property="textfieldConfPassword" destination="nTi-xh-4C6" id="7mt-l2-7Ul"/>
+                        <outlet property="textfieldEmail" destination="Ygf-XP-LGE" id="Qcm-de-Wi9"/>
+                        <outlet property="textfieldLandmark" destination="mhv-3H-l06" id="EiC-Yq-hXX"/>
+                        <outlet property="textfieldMobileNo" destination="xgH-6m-Pkv" id="Jla-Xs-iaG"/>
+                        <outlet property="textfieldName" destination="8ic-eD-RNm" id="yIJ-xc-xPO"/>
+                        <outlet property="textfieldPassword" destination="yPc-Dx-wYf" id="9xd-Oa-tBJ"/>
+                        <outlet property="textfieldPincode" destination="cdI-hX-Roc" id="F7b-jD-h3b"/>
+                        <outlet property="textfieldSocietyName" destination="93e-RQ-hgh" id="dDU-Un-Agd"/>
+                        <outlet property="uiViewConfPassword" destination="QXu-BJ-d9o" id="mVa-Zh-WOc"/>
+                        <outlet property="uiViewPassword" destination="TIc-yW-bWa" id="LlL-hW-lwZ"/>
+                        <outlet property="uiViewToolBar" destination="xdj-fq-0hi" id="u2g-1p-M9h"/>
+                        <outletCollection property="btnUserType" destination="cGl-My-fK3" collectionClass="NSMutableArray" id="Gz7-mP-gKr"/>
+                        <outletCollection property="btnUserType" destination="XXW-5Y-1nW" collectionClass="NSMutableArray" id="omA-pt-3MO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WfG-0m-2CS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-571.01449275362324" y="1475.5434782608697"/>
+        </scene>
+        <!--Team DetailVC-->
+        <scene sceneID="iOI-qC-4nw">
+            <objects>
+                <viewController storyboardIdentifier="TeamDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vhu-CX-7ds" customClass="TeamDetailVC" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xin-C2-aqm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzc-En-YRT" customClass="ToolBar" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NGs-sx-hJa"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgI-F9-nNk">
+                                <rect key="frame" x="354" y="0.0" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tgI-F9-nNk" secondAttribute="height" multiplier="1:1" id="ycC-0Q-BKv"/>
+                                </constraints>
+                                <state key="normal" image="ic_edit"/>
+                                <connections>
+                                    <action selector="btnEditPressed:" destination="Vhu-CX-7ds" eventType="touchUpInside" id="eTP-GV-KWM"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7M-bh-IyN">
+                                <rect key="frame" x="0.0" y="60" width="414" height="676"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehP-3s-JI9">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="542"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KyO-hd-N8j">
+                                                <rect key="frame" x="16" y="0.0" width="382" height="542"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Flp-tU-pKv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="128"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profile_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Hz5-fe-gQe">
+                                                                <rect key="frame" x="131" y="6" width="120" height="120"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Hz5-fe-gQe" secondAttribute="height" multiplier="1:1" id="PRQ-qK-G60"/>
+                                                                    <constraint firstAttribute="height" constant="120" id="iAM-eR-ggT"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCB-Df-SlW">
+                                                                <rect key="frame" x="131" y="6" width="120" height="120"/>
+                                                                <connections>
+                                                                    <action selector="btnFullScreenImagePressed:" destination="Vhu-CX-7ds" eventType="touchUpInside" id="DPv-Uj-Ahz"/>
+                                                                    <action selector="btnFullScreenImagePressed:" destination="Sxr-Ep-wdF" eventType="touchUpInside" id="VW8-01-F9Q"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="128" id="AIl-Ff-Iqp"/>
+                                                            <constraint firstItem="Hz5-fe-gQe" firstAttribute="centerX" secondItem="Flp-tU-pKv" secondAttribute="centerX" id="Lf1-6Q-i6q"/>
+                                                            <constraint firstItem="Hz5-fe-gQe" firstAttribute="top" secondItem="Flp-tU-pKv" secondAttribute="top" constant="6" id="Nl1-yA-9uN"/>
+                                                            <constraint firstItem="vCB-Df-SlW" firstAttribute="trailing" secondItem="Hz5-fe-gQe" secondAttribute="trailing" id="Sgz-cB-n33"/>
+                                                            <constraint firstItem="vCB-Df-SlW" firstAttribute="bottom" secondItem="Hz5-fe-gQe" secondAttribute="bottom" id="TcV-S9-QEt"/>
+                                                            <constraint firstItem="vCB-Df-SlW" firstAttribute="top" secondItem="Hz5-fe-gQe" secondAttribute="top" id="ZbC-vG-0NI"/>
+                                                            <constraint firstItem="vCB-Df-SlW" firstAttribute="leading" secondItem="Hz5-fe-gQe" secondAttribute="leading" id="cct-pa-Wg4"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb7-0A-eQE">
+                                                        <rect key="frame" x="0.0" y="144" width="382" height="50"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="30"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L8I-BA-fHj">
+                                                        <rect key="frame" x="0.0" y="210" width="382" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active/Inactive User" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4E-7X-9U3">
+                                                                <rect key="frame" x="0.0" y="0.0" width="333" height="30"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
+                                                                <color key="textColor" name="AppFontColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQ2-kK-Ui8">
+                                                                <rect key="frame" x="333" y="0.0" width="51" height="30"/>
+                                                                <color key="onTintColor" name="AppThemeColor"/>
+                                                                <connections>
+                                                                    <action selector="switchUserStatusChanged:" destination="Vhu-CX-7ds" eventType="valueChanged" id="W0y-C6-uG7"/>
+                                                                </connections>
+                                                            </switch>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="aWB-W9-uXN"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="s9t-pB-EpF">
+                                                        <rect key="frame" x="0.0" y="256" width="382" height="66"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTU-DY-52g">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="12"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="AppPlaceHolderColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qt-GX-ztx">
+                                                                <rect key="frame" x="0.0" y="16" width="382" height="50"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="13"/>
+                                                                <color key="textColor" name="AppFontColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mb-tm-43i">
+                                                        <rect key="frame" x="0.0" y="338" width="382" height="40"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RXL-Mr-5Ki">
+                                                                <rect key="frame" x="0.0" y="0.0" width="342" height="40"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sj-Ik-pTh">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="342" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="12"/>
+                                                                        <color key="textColor" name="AppPlaceHolderColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LH6-Pb-Cu6">
+                                                                        <rect key="frame" x="0.0" y="20" width="342" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="13"/>
+                                                                        <color key="textColor" name="AppFontColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyw-o4-QkB">
+                                                                <rect key="frame" x="342" y="0.0" width="40" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="hyw-o4-QkB" secondAttribute="height" multiplier="1:1" id="iKe-HW-xSs"/>
+                                                                </constraints>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="ic_call"/>
+                                                                <connections>
+                                                                    <action selector="btnCallMemberPressed:" destination="Vhu-CX-7ds" eventType="touchUpInside" id="T4u-zY-zJn"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="CPT-21-zRw"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbX-Yu-UHQ">
+                                                        <rect key="frame" x="0.0" y="394" width="382" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gem-T1-6fp">
+                                                        <rect key="frame" x="0.0" y="427" width="382" height="66"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="VxZ-k9-XjK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="191" height="66"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pharmacy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARb-eT-8Id">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="191" height="62"/>
+                                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="12"/>
+                                                                        <color key="textColor" name="AppPlaceHolderColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gh5-dt-bci">
+                                                                        <rect key="frame" x="0.0" y="66" width="191" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="13"/>
+                                                                        <color key="textColor" name="AppFontColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="9DJ-88-Fqo">
+                                                                <rect key="frame" x="191" y="0.0" width="191" height="66"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uga-bA-nU1">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="191" height="12"/>
+                                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="12"/>
+                                                                        <color key="textColor" name="AppPlaceHolderColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxc-kn-fgK">
+                                                                        <rect key="frame" x="0.0" y="16" width="191" height="50"/>
+                                                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="13"/>
+                                                                        <color key="textColor" name="AppFontColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sld-Xg-7G2">
+                                                        <rect key="frame" x="0.0" y="509" width="382" height="17"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="17"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWb-aW-Q9s">
+                                                        <rect key="frame" x="0.0" y="542" width="382" height="0.0"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="13"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="KyO-hd-N8j" firstAttribute="top" secondItem="ehP-3s-JI9" secondAttribute="top" id="2w6-1g-jat"/>
+                                            <constraint firstAttribute="trailing" secondItem="KyO-hd-N8j" secondAttribute="trailing" constant="16" id="9tP-Lv-ngA"/>
+                                            <constraint firstItem="KyO-hd-N8j" firstAttribute="leading" secondItem="ehP-3s-JI9" secondAttribute="leading" constant="16" id="Yy9-HX-JAy"/>
+                                            <constraint firstAttribute="bottom" secondItem="KyO-hd-N8j" secondAttribute="bottom" id="khS-hn-Pmv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ehP-3s-JI9" firstAttribute="leading" secondItem="T7M-bh-IyN" secondAttribute="leading" id="39R-KU-V6V"/>
+                                    <constraint firstItem="ehP-3s-JI9" firstAttribute="top" secondItem="T7M-bh-IyN" secondAttribute="top" id="Bem-KR-iI9"/>
+                                    <constraint firstAttribute="bottom" secondItem="ehP-3s-JI9" secondAttribute="bottom" id="KLm-TP-53m"/>
+                                    <constraint firstAttribute="trailing" secondItem="ehP-3s-JI9" secondAttribute="trailing" id="Nor-Cm-tvo"/>
+                                    <constraint firstItem="ehP-3s-JI9" firstAttribute="width" secondItem="T7M-bh-IyN" secondAttribute="width" id="eGg-RL-hXR"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="MLK-1R-B2f"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Uuk-4o-Dmm"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FUs-X9-hf7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jzc-En-YRT" firstAttribute="top" secondItem="FUs-X9-hf7" secondAttribute="top" id="2Kx-xU-SuP"/>
+                            <constraint firstItem="FUs-X9-hf7" firstAttribute="bottom" secondItem="T7M-bh-IyN" secondAttribute="bottom" id="2gz-xV-YqN"/>
+                            <constraint firstItem="jzc-En-YRT" firstAttribute="leading" secondItem="xin-C2-aqm" secondAttribute="leading" id="HG9-0A-Kdp"/>
+                            <constraint firstItem="tgI-F9-nNk" firstAttribute="trailing" secondItem="jzc-En-YRT" secondAttribute="trailing" id="RxR-Iu-cbY"/>
+                            <constraint firstItem="tgI-F9-nNk" firstAttribute="top" secondItem="jzc-En-YRT" secondAttribute="top" id="UR7-CW-vv2"/>
+                            <constraint firstItem="T7M-bh-IyN" firstAttribute="top" secondItem="jzc-En-YRT" secondAttribute="bottom" id="X5y-DD-N8t"/>
+                            <constraint firstItem="tgI-F9-nNk" firstAttribute="width" secondItem="tgI-F9-nNk" secondAttribute="height" multiplier="1:1" id="g06-5D-yJ5"/>
+                            <constraint firstItem="T7M-bh-IyN" firstAttribute="leading" secondItem="FUs-X9-hf7" secondAttribute="leading" id="hbm-Um-gsD"/>
+                            <constraint firstItem="FUs-X9-hf7" firstAttribute="trailing" secondItem="jzc-En-YRT" secondAttribute="trailing" id="ii8-qb-46y"/>
+                            <constraint firstItem="FUs-X9-hf7" firstAttribute="trailing" secondItem="T7M-bh-IyN" secondAttribute="trailing" id="qUj-Td-vI4"/>
+                            <constraint firstItem="tgI-F9-nNk" firstAttribute="bottom" secondItem="jzc-En-YRT" secondAttribute="bottom" id="wci-bT-fYO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnEdit" destination="tgI-F9-nNk" id="nhl-DG-UNp"/>
+                        <outlet property="imageViewProfile" destination="Hz5-fe-gQe" id="H0V-fJ-YaV"/>
+                        <outlet property="labelAddress" destination="PWb-aW-Q9s" id="3rO-Oi-e6t"/>
+                        <outlet property="labelDesignation" destination="Sxc-kn-fgK" id="m27-hZ-brr"/>
+                        <outlet property="labelEmail" destination="3Qt-GX-ztx" id="c5E-xT-d1Y"/>
+                        <outlet property="labelMobile" destination="LH6-Pb-Cu6" id="BlM-Qj-uNT"/>
+                        <outlet property="labelPharmacyName" destination="gh5-dt-bci" id="f8O-XV-QT7"/>
+                        <outlet property="labelUserName" destination="vb7-0A-eQE" id="utm-UZ-gyS"/>
+                        <outlet property="switchActiveInActiveUser" destination="LQ2-kK-Ui8" id="eo3-9U-6C3"/>
+                        <outlet property="uiViewToolBar" destination="jzc-En-YRT" id="pWK-69-5md"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YeU-o6-VJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109" y="1476"/>
+        </scene>
+        <!--Delivery Boy ListVC-->
+        <scene sceneID="2cw-qG-0yB">
+            <objects>
+                <viewController storyboardIdentifier="DeliveryBoyListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EKh-H1-BTh" customClass="DeliveryBoyListVC" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nZi-LY-Ztz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lV6-yY-09Z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRg-4H-OFv" customClass="ToolBar" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="hcx-F1-LeT"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2aW-2r-AAv">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="676"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="EKh-H1-BTh" id="6Gp-Yj-MkT"/>
+                                            <outlet property="delegate" destination="EKh-H1-BTh" id="5r1-db-Y59"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Rj-tJ-mtX">
+                                <rect key="frame" x="351" y="664" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="Goc-Cv-qSj"/>
+                                    <constraint firstAttribute="width" secondItem="3Rj-tJ-mtX" secondAttribute="height" multiplier="1:1" id="He2-Cu-B3s"/>
+                                </constraints>
+                                <color key="tintColor" name="AppThemeColor"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="plus.circle.fill" catalog="system" symbolScale="medium"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" weight="thin">
+                                        <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="btnAddMember:" destination="EKh-H1-BTh" eventType="touchUpInside" id="M2Q-sl-sCa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zCf-lx-8dO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Rj-tJ-mtX" firstAttribute="width" secondItem="3Rj-tJ-mtX" secondAttribute="height" multiplier="1:1" id="3WA-NP-ku8"/>
+                            <constraint firstItem="lV6-yY-09Z" firstAttribute="leading" secondItem="zCf-lx-8dO" secondAttribute="leading" id="4Kt-oj-u8f"/>
+                            <constraint firstItem="zCf-lx-8dO" firstAttribute="bottom" secondItem="3Rj-tJ-mtX" secondAttribute="bottom" constant="25" id="UDG-ag-pTG"/>
+                            <constraint firstItem="lV6-yY-09Z" firstAttribute="top" secondItem="zCf-lx-8dO" secondAttribute="top" id="YfB-ti-3pt"/>
+                            <constraint firstItem="zCf-lx-8dO" firstAttribute="trailing" secondItem="3Rj-tJ-mtX" secondAttribute="trailing" constant="16" id="ir1-xa-P10"/>
+                            <constraint firstItem="lV6-yY-09Z" firstAttribute="bottom" secondItem="zCf-lx-8dO" secondAttribute="bottom" id="qDI-kv-T86"/>
+                            <constraint firstItem="lV6-yY-09Z" firstAttribute="trailing" secondItem="zCf-lx-8dO" secondAttribute="trailing" id="uxu-o5-iEB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAdd" destination="3Rj-tJ-mtX" id="SLd-ag-SzN"/>
+                        <outlet property="tableViewUser" destination="2aW-2r-AAv" id="lZ1-Aq-rCK"/>
+                        <outlet property="uiViewToolbar" destination="hRg-4H-OFv" id="Qng-Ng-pFs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkO-Rq-LGA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799" y="782"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="8ic-eD-RNm">
+            <size key="intrinsicContentSize" width="382" height="36.513671875"/>
+        </designable>
+        <designable name="93e-RQ-hgh">
+            <size key="intrinsicContentSize" width="382" height="36.513671875"/>
+        </designable>
+        <designable name="SIB-Pa-p1D">
+            <size key="intrinsicContentSize" width="382" height="36.513671875"/>
+        </designable>
+        <designable name="Scm-Mp-FAy">
+            <size key="intrinsicContentSize" width="38" height="30"/>
+        </designable>
+        <designable name="Ygf-XP-LGE">
+            <size key="intrinsicContentSize" width="382" height="36.513671875"/>
+        </designable>
+        <designable name="cdI-hX-Roc">
+            <size key="intrinsicContentSize" width="382" height="36.513671875"/>
+        </designable>
+        <designable name="mhv-3H-l06">
+            <size key="intrinsicContentSize" width="382" height="36.513671875"/>
+        </designable>
+        <designable name="nTi-xh-4C6">
+            <size key="intrinsicContentSize" width="382" height="36.513671875"/>
+        </designable>
+        <designable name="xgH-6m-Pkv">
+            <size key="intrinsicContentSize" width="382" height="36.513671875"/>
+        </designable>
+        <designable name="yPc-Dx-wYf">
+            <size key="intrinsicContentSize" width="382" height="36.513671875"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_call" width="39" height="39"/>
+        <image name="ic_edit" width="24" height="24"/>
+        <image name="ic_edit_pencil" width="38.666667938232422" height="38.666667938232422"/>
+        <image name="ic_eye_grey" width="21" height="21"/>
+        <image name="ic_profile_placeholder" width="144" height="144"/>
+        <image name="ic_radio_blue" width="19" height="19"/>
+        <image name="ic_radio_grey" width="19" height="19"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="AppFocusedTextFieldColor">
+            <color red="0.0" green="0.62000000476837158" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppFontColor">
+            <color red="0.24300000071525574" green="0.24699999392032623" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppPlaceHolderColor">
+            <color red="0.13300000131130219" green="0.14100000262260437" blue="0.33300000429153442" alpha="0.54000002145767212" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppThemeColor">
+            <color red="0.14509803921568629" green="0.59999999999999998" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

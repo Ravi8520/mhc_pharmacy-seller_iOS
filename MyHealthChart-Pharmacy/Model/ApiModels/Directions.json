@@ -1,0 +1,17 @@
+{
+    "status" : 100
+    "message" : "",
+    "data" : {
+        "totalEarning": 123.34,
+        "content": [
+            {
+                "id" : 1,
+                "orderAmt" : 50.5,
+                "orderCount" : 5,
+                "date" : "2021-12-12"
+            }
+        ]
+    }
+}
+
+

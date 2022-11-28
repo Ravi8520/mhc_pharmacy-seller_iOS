@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AACF7A24-9C32-429E-965F-EDBB19E7CA37"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C22726FD-293A-4454-B2F7-546400E4A11E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Controller/MyTeamModule/AllTeamVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "getTeamMember(isLoading:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "95ACBEDB-91E1-4206-9E81-FAB162592418"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Controller/MyTeamModule/AllTeamVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "getTeamMember(isLoading:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A8415AE0-E42F-4DB9-A582-91CBD79C558F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Helper/NetworkHelper/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "322"
+            endingLineNumber = "322"
+            landmarkName = "makeNetworkRequestForCreateAccount(url:method:headers:defaultHeader:param:partnerShipDeed:drugLicence:adharCardFront:adharCardBack:panCard:ownerPhoto:isActivityIndicatorActive:isActivityIndicatorUserInteractionAllow:Completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3E4C8D7-A570-4979-83C8-F5214E6A87B6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Helper/NetworkHelper/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "648"
+            endingLineNumber = "648"
+            landmarkName = "makeNetworkRequest(url:method:headers:defaultHeader:param:fileData:isActivityIndicatorActive:isActivityIndicatorUserInteractionAllow:Completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "19A7FABD-32BF-45E0-89EE-E6B7C966F488"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Controller/MyTeamModule/AllTeamVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "getTeamMember(isLoading:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C953598-2390-4FE9-9D1C-BF1D89000EE5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Helper/NetworkHelper/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "630"
+            endingLineNumber = "630"
+            landmarkName = "makeNetworkRequest(url:method:headers:defaultHeader:param:fileData:isActivityIndicatorActive:isActivityIndicatorUserInteractionAllow:Completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3947775B-EAD2-4BA3-9460-FE49416CE835"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Helper/NetworkHelper/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "634"
+            endingLineNumber = "634"
+            landmarkName = "makeNetworkRequest(url:method:headers:defaultHeader:param:fileData:isActivityIndicatorActive:isActivityIndicatorUserInteractionAllow:Completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65273A0D-447F-4D3E-947D-3A85E68A68F6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Helper/NetworkHelper/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "612"
+            endingLineNumber = "612"
+            landmarkName = "makeNetworkRequest(url:method:headers:defaultHeader:param:fileData:isActivityIndicatorActive:isActivityIndicatorUserInteractionAllow:Completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F0B3B93-DD32-4D54-BE7F-EBF51446760C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Helper/NetworkHelper/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "604"
+            endingLineNumber = "604"
+            landmarkName = "makeNetworkRequest(url:method:headers:defaultHeader:param:fileData:isActivityIndicatorActive:isActivityIndicatorUserInteractionAllow:Completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "04FAC452-2C76-4A23-9A2C-B13FAD401FA6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Helper/NetworkHelper/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "662"
+            endingLineNumber = "662"
+            landmarkName = "makeNetworkRequest(url:method:headers:defaultHeader:param:fileData:isActivityIndicatorActive:isActivityIndicatorUserInteractionAllow:Completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12816ECD-9B12-4F5D-A85A-67D6D4E78985"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Helper/NetworkHelper/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "671"
+            endingLineNumber = "671"
+            landmarkName = "makeNetworkRequest(url:method:headers:defaultHeader:param:fileData:isActivityIndicatorActive:isActivityIndicatorUserInteractionAllow:Completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FBE818A2-5B30-483C-86C6-8D4B8C92D625"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Helper/NetworkHelper/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "681"
+            endingLineNumber = "681"
+            landmarkName = "makeNetworkRequest(url:method:headers:defaultHeader:param:fileData:isActivityIndicatorActive:isActivityIndicatorUserInteractionAllow:Completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FBE818A2-5B30-483C-86C6-8D4B8C92D625 - b94f7cd52454abba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Alamofire.SessionManager.MultipartFormDataEncodingResult) -&gt; () in static My_Health_Chart_Pharmacy.Networking.makeNetworkRequest(url: Swift.String, method: Alamofire.HTTPMethod, headers: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, defaultHeader: Swift.Bool, param: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, fileData: Swift.Array&lt;My_Health_Chart_Pharmacy.FileData&gt;, isActivityIndicatorActive: Swift.Bool, isActivityIndicatorUserInteractionAllow: Swift.Bool, Completion: (Swift.Result&lt;Swift.Optional&lt;Foundation.Data&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Health Chart-Pharmacy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/raj/Documents/Freelance%20Project/MHC%20Pharmacy%20/MyHealthChart-Pharmacy/Helper/NetworkHelper/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "681"
+                  endingLineNumber = "681"
+                  offsetFromSymbolStart = "468">
+               </Location>
+               <Location
+                  uuid = "FBE818A2-5B30-483C-86C6-8D4B8C92D625 - b94f7cd52454abba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Alamofire.SessionManager.MultipartFormDataEncodingResult) -&gt; () in static My_Health_Chart_Pharmacy.Networking.makeNetworkRequest(url: Swift.String, method: Alamofire.HTTPMethod, headers: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Swift.String&gt;&gt;, defaultHeader: Swift.Bool, param: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, fileData: Swift.Array&lt;My_Health_Chart_Pharmacy.FileData&gt;, isActivityIndicatorActive: Swift.Bool, isActivityIndicatorUserInteractionAllow: Swift.Bool, Completion: (Swift.Result&lt;Swift.Optional&lt;Foundation.Data&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "My Health Chart-Pharmacy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/raj/Documents/Freelance%20Project/MHC%20Pharmacy%20/MyHealthChart-Pharmacy/Helper/NetworkHelper/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "681"
+                  endingLineNumber = "681"
+                  offsetFromSymbolStart = "526">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA98AB7C-5B31-4635-A380-0E4DD8D168D6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Helper/NetworkHelper/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "441"
+            endingLineNumber = "441"
+            landmarkName = "makeNetworkRequest(url:method:headers:defaultHeader:param:fileData:isActivityIndicatorActive:isActivityIndicatorUserInteractionAllow:Completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A00712EE-7B94-43F7-9754-89B0E52F7803"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyHealthChart-Pharmacy/Helper/NetworkHelper/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "449"
+            endingLineNumber = "449"
+            landmarkName = "makeNetworkRequest(url:method:headers:defaultHeader:param:fileData:isActivityIndicatorActive:isActivityIndicatorUserInteractionAllow:Completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

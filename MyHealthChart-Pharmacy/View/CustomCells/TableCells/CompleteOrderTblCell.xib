@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="KGk-i7-Jjw" customClass="CompleteOrderTblCell" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDQ-GS-cnw">
+                        <rect key="frame" x="16" y="4" width="288" height="152"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zHM-BR-e3I">
+                                <rect key="frame" x="8" y="8" width="272" height="136"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vpk-dc-qeZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vPn-Xy-Tzc">
+                                                <rect key="frame" x="0.0" y="0.0" width="212" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Order Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIU-iG-kNj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="212" height="10"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="10"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="#14651496" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PD6-0G-QFV">
+                                                        <rect key="frame" x="0.0" y="10" width="212" height="40"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1KN-qX-XwM">
+                                                <rect key="frame" x="212" y="0.0" width="60" height="50"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qB-xf-X7Q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuG-hS-2GI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="18" height="50"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star_filled" translatesAutoresizingMaskIntoConstraints="NO" id="Njl-R4-alU">
+                                                                        <rect key="frame" x="0.0" y="16" width="18" height="18"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="18" id="TQH-2t-jB7"/>
+                                                                            <constraint firstAttribute="width" secondItem="Njl-R4-alU" secondAttribute="height" multiplier="1:1" id="wvO-Ys-aD4"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Njl-R4-alU" firstAttribute="centerY" secondItem="KuG-hS-2GI" secondAttribute="centerY" id="jIc-UV-cqp"/>
+                                                                    <constraint firstItem="Njl-R4-alU" firstAttribute="centerX" secondItem="KuG-hS-2GI" secondAttribute="centerX" id="mYe-KU-Dbs"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kiG-Jm-zYD">
+                                                                <rect key="frame" x="18" y="0.0" width="42" height="50"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="AppFontColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="0qB-xf-X7Q" secondAttribute="trailing" id="HHR-0e-3kn"/>
+                                                    <constraint firstAttribute="width" constant="60" id="JM0-2R-I7H"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0qB-xf-X7Q" secondAttribute="bottom" id="KIl-Ym-PyI"/>
+                                                    <constraint firstItem="0qB-xf-X7Q" firstAttribute="top" secondItem="1KN-qX-XwM" secondAttribute="top" id="PWG-EB-kJq"/>
+                                                    <constraint firstItem="0qB-xf-X7Q" firstAttribute="leading" secondItem="1KN-qX-XwM" secondAttribute="leading" id="Rqj-X3-pSB"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5pi-jm-gOo">
+                                                <rect key="frame" x="272" y="0.0" width="147.5" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k84-7y-eMM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147.5" height="10"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="10"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="10-10-2018, 10:30am" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaC-Lw-xiq">
+                                                        <rect key="frame" x="0.0" y="14" width="147.5" height="36"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="147.5" id="g89-KI-Smt"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8M-5s-tTU">
+                                        <rect key="frame" x="0.0" y="58" width="272" height="48"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CPI-jH-cTG">
+                                                <rect key="frame" x="0.0" y="0.0" width="212" height="48"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcx-MY-eLM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="212" height="10"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="10"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="John Deo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gB-Vf-1ed">
+                                                        <rect key="frame" x="0.0" y="10" width="212" height="38"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Goc-Qf-9MY">
+                                                <rect key="frame" x="212" y="0.0" width="60" height="48"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fem-0k-621">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="48"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63h-yS-ljJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="10"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="10"/>
+                                                                <color key="textColor" name="AppFontColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="123" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSe-5U-zUY">
+                                                                <rect key="frame" x="0.0" y="10" width="60" height="38"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="AppFontColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="fem-0k-621" firstAttribute="top" secondItem="Goc-Qf-9MY" secondAttribute="top" id="VN4-KQ-pma"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fem-0k-621" secondAttribute="bottom" id="Vdd-8b-Vp7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fem-0k-621" secondAttribute="trailing" id="XHX-RQ-XVk"/>
+                                                    <constraint firstAttribute="width" constant="60" id="jd8-MB-u8W"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ytl-F0-Nqs">
+                                                <rect key="frame" x="272" y="0.0" width="70" height="48"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYt-7L-fTu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70" height="10"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="10"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Accepted" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwt-1E-u6y">
+                                                        <rect key="frame" x="0.0" y="14" width="70" height="34"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="sgc-B1-Rxf"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lfa-Ti-9gt">
+                                        <rect key="frame" x="0.0" y="114" width="272" height="22"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppc-f3-tGi">
+                                                <rect key="frame" x="0.0" y="0.0" width="272" height="10"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="10"/>
+                                                <color key="textColor" name="AppFontColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="10-10-2018, 10:30am" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uu6-HW-ep1">
+                                                <rect key="frame" x="0.0" y="10" width="272" height="12"/>
+                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                <color key="textColor" name="AppFontColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fem-0k-621" firstAttribute="leading" secondItem="KuG-hS-2GI" secondAttribute="leading" id="A1t-X0-oiB"/>
+                                    <constraint firstItem="Goc-Qf-9MY" firstAttribute="leading" secondItem="Njl-R4-alU" secondAttribute="leading" id="mvS-Ij-X3c"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zHM-BR-e3I" firstAttribute="top" secondItem="oDQ-GS-cnw" secondAttribute="top" constant="8" id="2R7-7z-wzS"/>
+                            <constraint firstItem="zHM-BR-e3I" firstAttribute="leading" secondItem="oDQ-GS-cnw" secondAttribute="leading" constant="8" id="Fvk-XP-hGu"/>
+                            <constraint firstAttribute="trailing" secondItem="zHM-BR-e3I" secondAttribute="trailing" constant="8" id="Rm6-3r-8z7"/>
+                            <constraint firstAttribute="bottom" secondItem="zHM-BR-e3I" secondAttribute="bottom" constant="8" id="dyY-fa-abE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="oDQ-GS-cnw" secondAttribute="bottom" constant="4" id="JqR-Hj-lUr"/>
+                    <constraint firstAttribute="trailing" secondItem="oDQ-GS-cnw" secondAttribute="trailing" constant="16" id="UwW-Ux-XWD"/>
+                    <constraint firstItem="oDQ-GS-cnw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="fPx-3S-Bh4"/>
+                    <constraint firstItem="oDQ-GS-cnw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="vzQ-cY-nsz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="LadgerDateTimeTitle" destination="k84-7y-eMM" id="NLe-Uh-FJz"/>
+                <outlet property="imageViewStar" destination="Njl-R4-alU" id="Fa9-Go-Gqe"/>
+                <outlet property="labelCustomerName" destination="5gB-Vf-1ed" id="k6Q-I8-VcC"/>
+                <outlet property="labelCustomerNameTitle" destination="Vcx-MY-eLM" id="Kh4-Hi-RwN"/>
+                <outlet property="labelDashboardSearchStatus" destination="Mwt-1E-u6y" id="Eec-Rd-6Zt"/>
+                <outlet property="labelDashboardSearchTitle" destination="RYt-7L-fTu" id="Doe-80-NSL"/>
+                <outlet property="labelOrderNo" destination="PD6-0G-QFV" id="0M4-in-D2m"/>
+                <outlet property="labelOrderNoTitle" destination="yIU-iG-kNj" id="BYO-ad-sf9"/>
+                <outlet property="labelRating" destination="kiG-Jm-zYD" id="SdL-5x-Lpt"/>
+                <outlet property="labelTime" destination="Uu6-HW-ep1" id="eb4-Ql-Ofz"/>
+                <outlet property="labelTimeTitle" destination="ppc-f3-tGi" id="Qpd-Hj-jPI"/>
+                <outlet property="ladgerDateTime" destination="xaC-Lw-xiq" id="QgL-Ss-xgl"/>
+                <outlet property="ladgerDatestackView" destination="5pi-jm-gOo" id="nUA-mq-MIC"/>
+                <outlet property="lblAmount" destination="FSe-5U-zUY" id="94C-8B-eVM"/>
+                <outlet property="lblAmountTitle" destination="63h-yS-ljJ" id="LDe-NU-XT1"/>
+                <outlet property="lblAmountView" destination="Goc-Qf-9MY" id="0Eu-fX-ejz"/>
+                <outlet property="stackViewOrderStatus" destination="Ytl-F0-Nqs" id="yy2-in-ee1"/>
+                <outlet property="uiViewCard" destination="oDQ-GS-cnw" id="6Yx-Sq-Vrt"/>
+                <outlet property="uiViewStarView" destination="1KN-qX-XwM" id="vlI-lQ-KZe"/>
+            </connections>
+            <point key="canvasLocation" x="-10.144927536231885" y="141.29464285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_star_filled" width="110" height="105"/>
+        <namedColor name="AppFontColor">
+            <color red="0.24300000071525574" green="0.24699999392032623" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeliveryOrderTVC" rowHeight="146" id="KGk-i7-Jjw" customClass="DeliveryOrderTVC" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khv-uJ-gZH">
+                        <rect key="frame" x="15" y="10" width="370" height="126"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7of-0h-EQk">
+                                <rect key="frame" x="8" y="8" width="354" height="110"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ff9-Iv-PQR">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="64"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-od-BeC">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="28"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="87N-7j-7zx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="28"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWX-xP-wFe">
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="12"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="10"/>
+                                                                <color key="textColor" name="AppFontColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#14651496" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8q-lB-Pgh">
+                                                                <rect key="frame" x="0.0" y="16" width="354" height="12"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="AppFontColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="EBj-6R-Wii">
+                                                        <rect key="frame" x="354" y="0.0" width="70" height="28"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xch-Fe-Ef5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="10"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="10"/>
+                                                                <color key="textColor" name="AppFontColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Accepted" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znI-mk-IKI">
+                                                                <rect key="frame" x="0.0" y="14" width="70" height="14"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="AppFontColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="70" id="roA-ne-HFa"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tje-z7-CkV">
+                                                <rect key="frame" x="0.0" y="36" width="354" height="28"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="g9D-qC-B7a">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="28"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abo-K7-vxF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="12"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="10"/>
+                                                                <color key="textColor" name="AppFontColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="John Deo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEV-ut-Djq">
+                                                                <rect key="frame" x="0.0" y="16" width="354" height="12"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="AppFontColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5R-ex-vE4">
+                                        <rect key="frame" x="0.0" y="72" width="354" height="38"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Hae-BW-XWY">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="38"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Received Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpC-wU-zkr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="10"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="10"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="10-10-2018, 10:30am" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpp-sf-jex">
+                                                        <rect key="frame" x="0.0" y="14" width="354" height="24"/>
+                                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="12"/>
+                                                        <color key="textColor" name="AppFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7of-0h-EQk" firstAttribute="leading" secondItem="Khv-uJ-gZH" secondAttribute="leading" constant="8" id="BlX-sf-339"/>
+                            <constraint firstAttribute="trailing" secondItem="7of-0h-EQk" secondAttribute="trailing" constant="8" id="cPD-Pw-PKM"/>
+                            <constraint firstItem="7of-0h-EQk" firstAttribute="top" secondItem="Khv-uJ-gZH" secondAttribute="top" constant="8" id="oWW-el-XoO"/>
+                            <constraint firstAttribute="bottom" secondItem="7of-0h-EQk" secondAttribute="bottom" constant="8" id="s4c-u6-oLC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Khv-uJ-gZH" secondAttribute="bottom" constant="10" id="4qF-gm-Lxc"/>
+                    <constraint firstAttribute="trailing" secondItem="Khv-uJ-gZH" secondAttribute="trailing" constant="15" id="5Li-g0-hip"/>
+                    <constraint firstItem="Khv-uJ-gZH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="B4e-X0-3Er"/>
+                    <constraint firstItem="Khv-uJ-gZH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="js4-JC-MN1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblCustomerName" destination="QEV-ut-Djq" id="HDq-7l-ceD"/>
+                <outlet property="lblOrderNumber" destination="V8q-lB-Pgh" id="3aN-KK-i3u"/>
+                <outlet property="lblStatus" destination="JpC-wU-zkr" id="8W9-XI-Sl0"/>
+                <outlet property="lblTime" destination="Tpp-sf-jex" id="6Dy-TN-2pb"/>
+                <outlet property="uiView" destination="Khv-uJ-gZH" id="2sA-Uk-cJT"/>
+            </connections>
+            <point key="canvasLocation" x="189.85507246376812" y="103.125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AppFontColor">
+            <color red="0.24300000071525574" green="0.24699999392032623" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

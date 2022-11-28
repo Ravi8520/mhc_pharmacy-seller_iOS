@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MediaCollectionCell" customModule="My_Health_Chart_Pharmacy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xc2-5a-wTX">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_pdf" translatesAutoresizingMaskIntoConstraints="NO" id="BDn-Uh-py0">
+                                <rect key="frame" x="8" y="8" width="159" height="159"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ6-FW-VUd">
+                                <rect key="frame" x="140" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="5vl-kt-Wgs"/>
+                                    <constraint firstAttribute="width" secondItem="ZQ6-FW-VUd" secondAttribute="height" multiplier="1:1" id="8B5-9v-7wi"/>
+                                    <constraint firstAttribute="height" constant="35" id="N89-D3-lBz"/>
+                                </constraints>
+                                <color key="tintColor" name="AppExpressColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="-8" maxX="-8" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="multiply.circle.fill" catalog="system" symbolScale="large" renderingMode="template"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="btnMedialCancelPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="J2L-NZ-eoR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZQ6-FW-VUd" firstAttribute="top" secondItem="xc2-5a-wTX" secondAttribute="top" id="0Oy-ML-yJb"/>
+                            <constraint firstItem="BDn-Uh-py0" firstAttribute="leading" secondItem="xc2-5a-wTX" secondAttribute="leading" constant="8" id="ZTB-eq-UeN"/>
+                            <constraint firstAttribute="width" secondItem="xc2-5a-wTX" secondAttribute="height" multiplier="1:1" id="alC-ae-a2p"/>
+                            <constraint firstAttribute="bottom" secondItem="BDn-Uh-py0" secondAttribute="bottom" constant="8" id="b7u-j5-pdy"/>
+                            <constraint firstAttribute="trailing" secondItem="BDn-Uh-py0" secondAttribute="trailing" constant="8" id="gUi-rd-PqS"/>
+                            <constraint firstAttribute="trailing" secondItem="ZQ6-FW-VUd" secondAttribute="trailing" id="loP-db-6vz"/>
+                            <constraint firstItem="BDn-Uh-py0" firstAttribute="top" secondItem="xc2-5a-wTX" secondAttribute="top" constant="8" id="unC-tc-AC4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="xc2-5a-wTX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5YQ-1C-P3J"/>
+                <constraint firstAttribute="bottom" secondItem="xc2-5a-wTX" secondAttribute="bottom" id="Key-EM-GkP"/>
+                <constraint firstAttribute="trailing" secondItem="xc2-5a-wTX" secondAttribute="trailing" id="bj8-ov-8nC"/>
+                <constraint firstItem="xc2-5a-wTX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uC4-N1-uGb"/>
+            </constraints>
+            <size key="customSize" width="175" height="175"/>
+            <connections>
+                <outlet property="btnMediaCancel" destination="ZQ6-FW-VUd" id="BQt-q9-Din"/>
+                <outlet property="imageViewMedia" destination="BDn-Uh-py0" id="s0h-nX-Bwj"/>
+            </connections>
+            <point key="canvasLocation" x="51.449275362318843" y="128.23660714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_pdf" width="475" height="352.5"/>
+        <image name="multiply.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="AppExpressColor">
+            <color red="0.9570000171661377" green="0.097999997437000275" blue="0.28200000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
